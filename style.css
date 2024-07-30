@@ -2,7 +2,7 @@
  .container {
   
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
    
     
     display: grid;
@@ -15,6 +15,7 @@
    
     
     /*background-image: url('./images/orange_sky2.jpg'); /* Path to your background image */
+    z-index: 4; /* Position the background behind other content */
     background-color: #FF8225;
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
@@ -30,7 +31,7 @@
 
     display: grid;
     flex-direction: column; /* Ensure elements stack vertically */
-    
+    z-index: 2; /* Position the background behind other content */
     background-color: white;
     color: #173B45;
     font-size: 1.2rem;
@@ -39,6 +40,7 @@
   }
 
   .blurb {
+    z-index: 2; /* Position the background behind other content */
     color: #173B45;
     display: grid;
     align-items: center;
@@ -49,7 +51,7 @@
 
   .coname {
        
-   
+    z-index: 2; /* Position the background behind other content */
       font-family: "Playfair Display", serif;
       font-optical-sizing: auto;
       font-weight: 500;
@@ -74,7 +76,7 @@
  
     display: grid;
     font-size: 1.rem;
-    grid-area: 3 / 2 / 3 / 2;
+    grid-area: 3 / 2 ;
     padding: 10px;
     background-color: #F8EDED;
     color: #173B45;
@@ -84,7 +86,7 @@
  
     display: grid;
     font-size: 1.rem;
-    grid-area: 3 / 3 / 3 / 3;
+    grid-area: 3 / 3 ;
     padding: 10px;
     background-color: #F8EDED;
     color: #173B45;
@@ -94,7 +96,7 @@
  
     display: grid;
     font-size: 1.rem;
-    grid-area: 3 / 4 / 3 / 4;
+    grid-area: 3 / 4 ;
     padding: 10px;
     background-color: #F8EDED;
     color: #173B45;
@@ -132,17 +134,17 @@
 .background-plane {
 
     grid-column: 1 / span 2; /* Span across both columns */
-            grid-row: 1 / span 2; /* Span across two rows if needed */
-            background-image: img src=""); /* Replace with your image URL */
+            grid-row: 3 / span 2; /* Span across two rows if needed */
+            background-image: url('images/plane\ sketch.jpg'); /* Replace with your image URL */
             background-size: cover; /* Ensure the image covers the entire grid item */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent the image from repeating */
-            z-index: 1; /* Position the background behind other content */
-            opacity: 0.5; /* Optional: make the background semi-transparent */
+            z-index: 3; /* Position the background behind other content */
+            opacity: 0.1; /* Optional: make the background semi-transparent */
             position: absolute; /* Allow overlapping within the container */
             top: 0;
             left: 0;
-            width: 100%;
+            width: 50%;
             height: 100%;
 
 }
