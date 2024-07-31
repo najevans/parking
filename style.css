@@ -69,13 +69,13 @@
     min-width: 300px;
     /* min-width: 300px; */
   }
-  .keys img {
+  .keys img{
 
     
     display: flex;
    
     flex: 1;
-    max-width: 400px;
+    max-width: 380px; 
     /* min-width: 160px; */
     padding-bottom: 20px; 
     padding-top: 40px;
