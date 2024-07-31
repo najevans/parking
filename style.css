@@ -1,8 +1,9 @@
 
- .container {
+ .grid_container {
   
     width: 100vw;
-    /* height: 80vh; */
+    
+    /* height: 55vh; */ 
 
      
     
@@ -12,7 +13,7 @@
     grid-gap: 10px;
     gap: 1 rem;
     grid-template-columns: .48fr 1fr 1fr 1fr .48fr;
-    grid-template-rows: 25% auto auto;
+    grid-template-rows: 25% auto auto auto;
   }
 
   .orange {
@@ -60,6 +61,10 @@
       font-optical-sizing: auto;
       font-weight: 500;
       font-style: normal;
+      align-items: center;
+    justify-content: center;
+    text-align: center;
+
     color: white;
     font-size: 2.5rem
   }
@@ -90,7 +95,7 @@
     flex-wrap: wrap;
 
 }
-  .bullet1 {
+  .bullet {
  
     display: flex;
     flex-flow: column;
@@ -103,31 +108,7 @@
     color: #173B45;
   
   }
-  .bullet2 {
  
-    display: flex;
-    font-size: 1.rem;
-    flex-flow: column;
-    padding: 10px;
-    flex: 1 1 100px; 
-
-    background-color: #F8EDED;
-    color: #173B45;
-  
-  }
-  .bullet3 {
- 
-    display: flex;
-    font-size: 1.rem;
-    flex-flow: column;
-    padding: 10px;
-    flex: 1 1 100px; 
-
-    background-color: #F8EDED;
-    color: #173B45;
-  
-  }
-
   h3 {
 
     display: grid;
@@ -172,4 +153,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.footer_container {
+    grid-area: 4 / 1 / 4 / 6;
+
 }
