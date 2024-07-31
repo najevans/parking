@@ -41,7 +41,13 @@
     color: #173B45;
     font-size: 1.2rem;
     padding: 10px;
-    grid-area: 2 / 2 / 2 / 5;
+    grid-area: 2 / 2 / 2 / 4;
+  }
+
+  .keys{
+
+    grid-area: 2 / 5 / 2 / 6;
+    
   }
 
   .blurb {
@@ -159,3 +165,4 @@
     grid-area: 4 / 1 / 4 / 6;
 
 }
+
