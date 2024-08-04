@@ -36,6 +36,7 @@
     background-color: #FF8225;
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
+    flex-wrap: wrap;
 
   }
   .coname {
@@ -68,13 +69,17 @@
   .telnumber{
 
     display: flex;  
+    flex-direction: column;
     
+    align-items: center;
+
     font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-      font-size: 1.5rem;  
+      font-size: 1.2rem;  
     
-    padding-right: 7x;
+    padding-top: 5px;
+    padding-right: 2pc;
     
   }
 
@@ -244,9 +249,9 @@
  
   gap: 40px;
   background-color: white;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: left;
-  
+  padding-top: 30px;
  
   /* height: 100vh; */
   flex-wrap: wrap;
