@@ -16,20 +16,66 @@
     grid-template-rows: 200px auto auto auto auto auto;
   }
 
-  .orange {
+
+  
+  .orange-container {
    
     
-    /*background-image: url('./images/orange_sky2.jpg'); /* Path to your background image */
+    display: grid;
+    
+    grid-area: 1 /2 / 1/ 5;
+      
+  }
+
+  .orange-flex {
+    display: flex;
+    flex-direction: row; /* Ensure elements stack vertically */
+    align-items: center;
+    justify-content: space-around;
     z-index: 4; /* Position the background behind other content */
     background-color: #FF8225;
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
-    display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
-    align-items: center;
+
+  }
+  .coname {
+       
+    z-index: 2; /* Position the background behind other content */
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    
     justify-content: center;
-    grid-area: 1 /1 / 1/ 6;
-      
+    text-align: center;
+    flex-direction: column;
+    padding-left: 0;
+    color: white;
+    font-size: 2.5rem
+  }
+
+  .sub {
+
+
+ 
+      font-family: "Edu AU VIC WA NT Hand", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.5rem;
+
+  }
+  .telnumber{
+
+    display: flex;  
+    
+    font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.5rem;  
+    
+    padding-right: 7x;
+    
   }
 
   .aboutus_container {    
@@ -98,32 +144,7 @@
 
   }
 
-  .coname {
-       
-    z-index: 2; /* Position the background behind other content */
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-      align-items: center;
-    justify-content: center;
-    text-align: center;
 
-    color: white;
-    font-size: 2.5rem
-  }
-
-  .sub {
-
-
- 
-      font-family: "Edu AU VIC WA NT Hand", cursive;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.5rem;
-
-  }
 
  .bullet_container{
 
