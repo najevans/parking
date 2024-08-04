@@ -160,16 +160,15 @@
   display: grid;
   grid-area: 3 / 2 / 3 / 5;
  } 
-.flex_bullets {
+.flex-bullets {
 
     display: flex;
     justify-content: center;
     align-items: center;
- 
     gap: 20px;
     background-color: white;
     flex-wrap: wrap;
-    flex-flow: row;
+    flex-flow: row wrap;
 
 }
   .bullet {
@@ -284,7 +283,7 @@
 
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row;
+    flex-flow: row wrap;
 
     /* align-items: center; */
     /* gap: 40px; */
@@ -294,7 +293,7 @@
 
 .faqq{
   display:flex;
-  /* flex-basis: 700px; */
+ 
   flex: 0 1 40%;
   
 }
@@ -302,7 +301,12 @@
 
 .faqa{
   display:flex;
+
   flex: 1;
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto; */
+
   
 }
 .footer_container {
