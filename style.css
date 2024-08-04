@@ -12,7 +12,7 @@
     /* grid-auto-columns: 1fr; */
     grid-gap: 10px;
     gap: 1 rem;
-    grid-template-columns: .48fr 1fr 1fr 1fr .48fr;
+    grid-template-columns: .20fr 1fr 1fr 1fr .20fr;
     grid-template-rows: 200px auto auto auto auto auto;
   }
 
@@ -20,10 +20,10 @@
   
   .orange-container {
    
-    
+
     display: grid;
     
-    grid-area: 1 /2 / 1/ 5;
+    grid-area: 1 /1 / 1/ 6;
       
   }
 
@@ -80,7 +80,7 @@
     
   }
 
-  
+
   .aboutus_container {    
 
     display: grid;
