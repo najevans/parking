@@ -296,7 +296,7 @@
   display:flex;
 /*  
   flex: 0 1 40%; */
-  min-width: 200px;
+  min-width: 150px;
   /* flex-basis: 600px;
   flex-grow: 0;
   flex-shrink: 1; */
@@ -307,7 +307,7 @@
 .faqa{
   display:flex;
 
-  min-width: 400px;
+  min-width: 300px;
   /* flex: 1;  */
   /* min-width: 400px; */
   /* flex-basis: 600px;  
