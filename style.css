@@ -13,7 +13,7 @@
     grid-gap: 10px;
     gap: 1 rem;
     grid-template-columns: .48fr 1fr 1fr 1fr .48fr;
-    grid-template-rows: 25% auto auto auto;
+    grid-template-rows: 200px auto auto auto auto auto;
   }
 
   .orange {
@@ -44,10 +44,11 @@
 
     display: flex;
  
-    gap: 20px;
+    gap: 40px;
     background-color: white;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
    
     /* height: 100vh; */
     flex-wrap: wrap;
@@ -78,8 +79,9 @@
     max-width: 100%;
     height: auto; 
     /* min-width: 160px; */
-    padding-bottom: 20px; 
-    padding-top: 40px;
+    /* padding: 30px; */
+    margin: 50px;
+    
     gap: 10px;
     background-color: white;
     
@@ -155,11 +157,14 @@
     box-sizing: border-box; /* Include padding in width and height */
     text-align: center; /* Center text if needed */
   }
- 
+ h4 {
+
+    font-size: 1rem;
+ }
   h3 {
 /* 
     display: grid; */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
   }
 
@@ -168,7 +173,7 @@
     /* display:grid; */
     color: #173B45;
     font-size: 1.5rem;
-    align-items: center;
+    
     justify-content: left;
 
   }
@@ -202,8 +207,33 @@
     height: 100%;
 }
 
+.faqs_container{
+
+      display: grid;
+
+   
+    grid-area: 4 / 2 /4 /5;
+
+}
+
+.faqs_flex{
+
+  display: flex;
+  flex-flow: column;
+ 
+  gap: 40px;
+  background-color: white;
+  justify-content: center;
+  align-items: left;
+  
+ 
+  /* height: 100vh; */
+  flex-wrap: wrap;
+
+}
+
 .footer_container {
-    grid-area: 4 / 1 / 4 / 6;
+    grid-area: 5 / 1 / 5 / 6;
 
 }
 
