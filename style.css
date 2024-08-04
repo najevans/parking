@@ -12,7 +12,7 @@
     /* grid-auto-columns: 1fr; */
     grid-gap: 10px;
     gap: 1 rem;
-    grid-template-columns: .20fr 1fr 1fr 1fr .20fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px auto auto auto auto auto;
   }
 
@@ -251,7 +251,8 @@
 
   display: flex;
  
-  gap: 40px;
+  padding-top: 30px;
+  gap: 20px;
   background-color: white;
   justify-content: space-evenly  ;
   
@@ -293,21 +294,27 @@
 
 .faqq{
   display:flex;
- 
-  flex: 0 1 40%;
-  
+/*  
+  flex: 0 1 40%; */
+  min-width: 200px;
+  /* flex-basis: 600px;
+  flex-grow: 0;
+  flex-shrink: 1; */
+  flex: 1;
 }
 
 
 .faqa{
   display:flex;
 
-  flex: 1;
-  /* flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto; */
+  min-width: 400px;
+  /* flex: 1;  */
+  /* min-width: 400px; */
+  /* flex-basis: 600px;  
+  flex-grow: 1;
+  flex-shrink: 1; */
+  flex: 2;
 
-  
 }
 .footer_container {
     grid-area: 5 / 1 / 5 / 6;
