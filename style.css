@@ -474,6 +474,16 @@ h2 {
       padding: 0px;
     }
 
+    .additional_images
+    {
+      display: none;
+    }
+
+    .how_container .imgBx
+    {
+      max-height: 0px;
+    }
+
     }
 
        
