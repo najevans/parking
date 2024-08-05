@@ -18,8 +18,17 @@
 {
 
   color: #FF8225;
-  background-color: F8EDED;
+  background-color: #F8EDED;
   font-size: 0.9rem;
+}
+
+.nav-link
+
+{
+  /* background-color: #FF8225;
+  color: #F8EDED;
+  font-size: 0.9rem; */
+
 }
 
 
@@ -177,7 +186,12 @@
 
 
 
+.how_container{
 
+  display: grid;
+  grid-auto-flow: column;
+  grid-area: 4 / 1 / 4 / 6;
+}
 
 
 
@@ -195,7 +209,7 @@
       display: grid;
 
    
-    grid-area: 4 / 1 /4 /6;
+    grid-area: 2 / 1 /2 /6;
 
 }
 
