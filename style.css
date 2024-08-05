@@ -1,4 +1,10 @@
 
+ 
+ *{
+  box-sizing: border-box;
+ }
+ 
+ 
  .grid_container {
   
     width: 100vw;
@@ -76,7 +82,7 @@
     font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
-      font-size: 1.rem;  
+      font-size: 1.0rem;  
     
   }
 
@@ -85,7 +91,7 @@
 
     display: grid;
    
-    grid-area: 2 / 2 / 2 / 5;
+    grid-area: 2 / 1 / 2 / 6;
   }
 
 
@@ -97,10 +103,10 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    
+    flex-flow: row;
    
     /* height: 100vh; */
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
   }
 
@@ -112,21 +118,36 @@
     z-index: 2; /* Position the background behind other content */
     background-color: white;
     color: #173B45;
-    font-size: 1.2rem;
+    font-size: 1.rem;
     padding: 5px;
-    flex: 1;
-    max-width: 500px;
-    min-width: 300px;
+    flex:1;
+    
+
+    /* min-width: 80%; */
+    
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    max-width: 390px;
+    min-width: 200px; */
     /* min-width: 300px; */
   }
   .keys img{
 
     
+
     display: flex;
-   
-    flex: 1;
-    max-width: 100%;
-    height: auto; 
+    flex-shrink: 1;
+
+    /* flex: 1; */
+    /* max-width: 350px; */
+
+    /* flex-grow: 1;
+    
+    /* flex-basis: 400px;
+    max-width: 400px ;
+    min-width: 200px; */ */
+    /* height: auto;  */
     /* min-width: 160px; */
     padding: 50px;
     /* margin: 50px; */
@@ -140,7 +161,7 @@
   .blurb {
     z-index: 2; /* Position the background behind other content */
     color: #173B45;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
