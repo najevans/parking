@@ -1,188 +1,153 @@
 
  
- *{
-  box-sizing: border-box;
- }
- 
- 
  .grid_container {
   
-    width: 100vw;
-    
-    /* height: 55vh; */ 
-
+  width: 100%;
+  
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px auto auto auto auto auto;
      
+  display: grid;
+  
+ }
+
+
+.nav-link
+
+{
+
+  color: #FF8225;
+  background-color: F8EDED;
+  font-size: 0.9rem;
+}
+
+
+ .orange-container {
+   
+
+  display: grid;
+  
+  grid-area: 1 /1 / 1/ 6;
     
-    display: grid;
-    grid-auto-flow: column;
-    /* grid-auto-columns: 1fr; */
-    grid-gap: 10px;
-    gap: 1 rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px auto auto auto auto auto;
-  }
+}
+
+.orange-flex {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  z-index: 4; /* Position the background behind other content */
+  background-color: #FF8225;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image 
+    */
+  flex-wrap: wrap;
+
+}
+.coname {
+     
+  z-index: 2; /* Position the background behind other content */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-right: 80px;
+  color: white;
+  font-size: 2.5rem
+}
+
+.sub {
+
+    
+
+
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+
+}
+.telnumber{
+
+  display: flex;  
+  flex-direction: column;
+  
+  align-items: center;
+
+  font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0rem;  
+    padding-left: 80px;
+  
+}
+
+
+
+ .aboutus_container{
+
+  display: grid;
+  grid-auto-flow: column;
+
+  grid-area: 2 / 1 / 2 / 6;
+
+
+ }
+
+
+ .aboutus_flex {
+
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+  flex-flow: row;
 
 
   
-  .orange-container {
-   
 
-    display: grid;
-    
-    grid-area: 1 /1 / 1/ 6;
-      
-  }
+ }
 
-  .orange-flex {
-    display: flex;
-    flex-direction: row; /* Ensure elements stack vertically */
-    align-items: center;
-    justify-content: space-around;
-    z-index: 4; /* Position the background behind other content */
-    background-color: #FF8225;
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the image */
-    flex-wrap: wrap;
+ .aboutus_flex .content {
+  margin-left: 20px;
+  max-width: 400px;
 
-  }
-  .coname {
-       
-    z-index: 2; /* Position the background behind other content */
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-    
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding-left: 0;
-    color: white;
-    font-size: 2.5rem
-  }
+ }
 
-  .sub {
+ .aboutus_flex .imgBx {
+
+  max-width: 400px;
+  flex: 0 0 400px;
+  padding: 20px;
+ }
+
+ .aboutus_flex .imgBx img {
+
+  max-width: 100%;
+
+ }
 
 
- 
-      font-family: "Edu AU VIC WA NT Hand", cursive;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.5rem;
-
-  }
-  .telnumber{
-
-    display: flex;  
-    flex-direction: column;
-    
-    align-items: center;
-
-    font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.0rem;  
-    
-  }
-
-
-  .aboutus_container {    
-
-    display: grid;
-   
-    grid-area: 2 / 1 / 2 / 6;
-  }
-
-
-  .aboutus_flex {
-
-    display: flex;
- 
-    gap: 5px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-   
-    /* height: 100vh; */
-    flex-wrap:wrap;
-
-  }
-
-  .aboutus {
-    
-    display: flex;
-    flex-direction: column;
- 
-    z-index: 2; /* Position the background behind other content */
-    background-color: white;
-    color: #173B45;
-    font-size: 1.rem;
-    padding: 5px;
-    flex:1;
-    
-
-    /* min-width: 80%; */
-    
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 400px;
-    max-width: 390px;
-    min-width: 200px; */
-    /* min-width: 300px; */
-  }
-  .keys img{
-
-    
-
-    display: flex;
-    flex-shrink: 1;
-
-    /* flex: 1; */
-    /* max-width: 350px; */
-
-    /* flex-grow: 1;
-    
-    /* flex-basis: 400px;
-    max-width: 400px ;
-    min-width: 200px; */ */
-    /* height: auto;  */
-    /* min-width: 160px; */
-    padding: 50px;
-    /* margin: 50px; */
-    
-    gap: 10px;
-    background-color: white;
-    
-    
-  }
-
-  .blurb {
-    z-index: 2; /* Position the background behind other content */
-    color: #173B45;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-  }
-
-
- .booknow {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-top: 20px;
-    text-align: center;
- }  
 
  .bullet-container{
 
   display: grid;
-  grid-area: 3 / 2 / 3 / 5;
+  grid-area: 3 / 1 / 3 / 6;
  } 
+
 .flex-bullets {
 
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,67 +169,33 @@
     border-radius: 5px;
     padding: 20px;
     background-color: #F8EDED;
+    
     color: #173B45;
     box-sizing: border-box; /* Include padding in width and height */
     text-align: center; /* Center text if needed */
   }
- h4 {
 
-    font-size: 1rem;
-    
- }
-  h3 {
-/* 
-    display: grid; */
-    font-size: 1.3rem;
 
-  }
 
-  h2 {
 
-    /* display:grid; */
-    color: #173B45;
-    font-size: 1.5rem;
-    
-    justify-content: left;
 
-  }
 
-  .align-horizontal {
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-  }
-  
-  .align-horizontal img {
-    margin-left: 15px; /* Adjust the spacing between the text and the image */
-    width: 20px; /* Set the desired width */
-    height: 20px; /* Set the desired height */
-  }
-  
-.background-plane {
 
-    display: grid;
-    grid-column: 1 / span 3; /* Span across both columns */
-    grid-row: 1 / span 3; /* Span across two rows if needed */
-    background-image: url('images/planesketch.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Ensure the image covers the entire grid item */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    z-index: 3; /* Position the background behind other content */
-    opacity: 0.1; /* Optional: make the background semi-transparent */
-    position: absolute; /* Allow overlapping within the container */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
+
+
+
+
+
+
+
 
 .faqs-container{
 
       display: grid;
 
    
-    grid-area: 4 / 2 /4 /5;
+    grid-area: 4 / 1 /4 /6;
 
 }
 
@@ -275,66 +206,48 @@
   padding-top: 30px;
   gap: 20px;
   background-color: white;
-  justify-content: space-evenly  ;
+  justify-content: left ;
+  align-items: left;
   
   flex-flow: column;
  
-  /* height: 100vh; */
   flex-wrap: wrap;
 
 }
 
-.call-image{
-
-
-  display: flex;
-   
-  flex: 1;
-  max-width: 100%;
-  height: auto; 
-  /* min-width: 160px; */
-  padding: 50px;
-  /* margin: 50px; */
-  
-  gap: 10px;
-  background-color: white;
-  
-}
 
 .faq{
 
     display: flex;
     flex-wrap: wrap;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+       
 
-    /* align-items: center; */
-    /* gap: 40px; */
-
-    
+     
 }
 
 .faqq{
   display:flex;
-/*  
-  flex: 0 1 40%; */
-  min-width: 150px;
-  /* flex-basis: 600px;
-  flex-grow: 0;
-  flex-shrink: 1; */
+
+
+  font-weight: 500;
+  min-width: 280px;
+  max-width: 300px;
   flex: 1;
+  
 }
 
 
 .faqa{
   display:flex;
 
-  min-width: 300px;
-  /* flex: 1;  */
-  /* min-width: 400px; */
-  /* flex-basis: 600px;  
-  flex-grow: 1;
-  flex-shrink: 1; */
-  flex: 2;
+  min-width: 500px;
+  max-width: 500px; 
+
+  
+
 
 }
 .footer_container {
@@ -342,3 +255,212 @@
 
 }
 
+
+
+
+
+
+
+h2 {
+
+  font-size: 1.3rem;
+}
+
+
+
+
+
+
+ @media (max-width: 991px)
+{
+    .aboutus_flex
+    {
+      flex-direction: row;
+    }
+
+    .faq{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row;
+      justify-content: center;
+      align-items: left;
+
+      }
+
+
+    .faqq{
+      display:flex;
+     
+      text-align: left;
+      min-width: 280px;
+      max-width: 300px;
+      flex: 1;
+      
+    }
+
+
+    .faqa{
+      display:flex;
+      
+      text-align: left;
+      min-width: 440px;
+      max-width: 440px; 
+    
+
+    }
+
+}
+
+@media (max-width: 768x)
+{
+    .aboutus_flex
+    {
+      
+      flex-direction: column;
+      max-width: 100%;
+    }
+    .aboutus_flex .imgBx
+    {
+      max-width: 100%;
+      max-height: 800px; 
+      padding: 5px;
+
+    }
+    .aboutus_flex .content
+    {
+      margin-left: 0px;
+      max-width: 100%;
+    }
+
+    .flex-bullets .bullet
+    {
+      max-width: 250px;
+      padding: 0px;
+      
+    }
+
+    .coname
+    {
+      padding-right: 0px;
+
+    }
+    .telnumber
+    {
+      padding-left: 0px;  
+    }
+
+    .faq{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      justify-content: left;
+      align-items: left;
+
+      }
+
+
+    .faqq{
+      display:flex;
+     
+      text-align: left;
+      min-width: 280px;
+      max-width: 300px;
+      flex: 1;
+      
+    }
+
+
+    .faqa{
+      display:flex;
+      
+      text-align: left;
+      min-width: 500px;
+      max-width: 500px; 
+    
+
+    }
+
+    } 
+
+@media (max-width: 539px)
+{
+    .aboutus_flex
+    {
+      
+      flex-direction: column;
+      max-width: 100%;
+    }
+    
+
+    .aboutus_flex .imgBx
+    {
+      /* max-width: auto; */
+      max-height: 220px; 
+      padding: 5px;
+
+    }
+
+    .aboutus_flex .imgBx img
+    {
+      max-height: 200px;
+    }
+
+    .aboutus_flex .content
+    {
+      margin-left: 0px;
+      max-width: 290px;
+      font-size: .9rem;
+    }
+
+    .flex-bullets .bullet
+    {
+      max-width: 250px;
+      padding: 0px;
+    
+    }
+
+
+    .faq{
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      justify-content: left;
+      align-items: left;
+
+      }
+
+
+    .faqq{
+      display:flex;
+     
+      text-align: left;
+      min-width: 300px;
+      max-width: 300px;
+      flex: 1;
+      
+    }
+
+
+    .faqa{
+      display:flex;
+      
+      text-align: left;
+      min-width: 300px;
+      max-width: 300px; 
+    }
+
+    .coname{
+      padding: 0px;
+    }
+
+    .telnumber{
+      padding: 0px;
+    }
+
+    }
+
+       
+    
